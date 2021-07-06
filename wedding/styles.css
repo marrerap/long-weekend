@@ -1,0 +1,84 @@
+#container2 {
+    justify-content: flex-end;
+    align-self: flex-end;
+    padding-right: 6%;
+}
+header {
+    background-color: rgba(221, 240, 168, 0.466);
+    color: rgb(90, 48, 18);
+    font-family:cursive;
+    border: coral;
+    text-align: center;
+    font-size: larger;
+    width:fit-content;
+    display: flex;
+    
+
+}
+header::before {
+    content: "---***---";
+    animation: animate infinite 5s;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "***---***";
+    }
+
+    50% {
+        content: "---***---";
+    }
+
+    75% {
+        content: "***---***";
+    }
+}
+header::after {
+    content: "---***---";
+    animation: animate infinite 4s;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "***---***";
+    }
+
+    50% {
+        content: "---***---";
+    }
+
+    75% {
+        content: "***---***";
+    }
+}
+
+button {
+    margin: 3px;
+    background-color: cornsilk;
+}
+input {
+    margin: 3px;
+    background-color:aliceblue;
+}
+body {
+ background-image: url('images/wedding.jpeg');
+ background-repeat: no-repeat;
+ background-position-y: top;
+ background-position-x: center;
+ background-size: auto;
+ background-size: 100vmax;   
+}
+#container {
+    display: flex;
+    justify-content: flex-end;
+}
+div {
+    display: flex;
+}
+#form {
+    height:37vmax;
+}
